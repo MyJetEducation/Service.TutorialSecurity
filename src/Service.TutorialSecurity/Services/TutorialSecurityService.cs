@@ -22,7 +22,7 @@ namespace Service.TutorialSecurity.Services
 
 		public async ValueTask<FinishStateGrpcResponse> GetFinishStateAsync(GetFinishStateGrpcRequest request)
 		{
-			Guid? userId = request.UserId;
+			string userId = request.UserId;
 			int? unit = request.Unit;
 
 			TaskTypeProgressInfo typeProgressInfo = await _taskProgressService.GetTotalProgressAsync(userId, unit);
