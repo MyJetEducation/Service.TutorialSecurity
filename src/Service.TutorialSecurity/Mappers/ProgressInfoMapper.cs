@@ -1,5 +1,5 @@
 ﻿using Service.Core.Client.Constants;
-using Service.TutorialSecurity.Grpc.Models.State;
+using Service.Education.Contracts.State;
 using Service.TutorialSecurity.Models;
 
 namespace Service.TutorialSecurity.Mappers

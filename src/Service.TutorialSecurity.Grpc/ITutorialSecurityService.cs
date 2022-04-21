@@ -1,7 +1,7 @@
 ﻿using System.ServiceModel;
 using System.Threading.Tasks;
-using Service.TutorialSecurity.Grpc.Models.State;
-using Service.TutorialSecurity.Grpc.Models.Task;
+using Service.Education.Contracts.State;
+using Service.Education.Contracts.Task;
 
 namespace Service.TutorialSecurity.Grpc
 {

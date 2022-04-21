@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using Service.Education.Contracts.State;
 using Service.TutorialSecurity.Grpc;
-using Service.TutorialSecurity.Grpc.Models.State;
 using Service.TutorialSecurity.Mappers;
 using Service.TutorialSecurity.Models;
 using Service.UserReward.Grpc;
