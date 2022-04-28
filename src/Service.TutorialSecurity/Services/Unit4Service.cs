@@ -18,10 +18,10 @@ namespace Service.TutorialSecurity.Services
 		{
 			ITaskTestAnswer[] answers = request.Answers;
 
-			int progress = CheckAnswer(20, answers, 1, 2)
-				+ CheckAnswer(20, answers, 2, 1)
+			int progress = CheckAnswer(20, answers, 1, 1)
+				+ CheckAnswer(20, answers, 2, 2, 3)
 				+ CheckAnswer(20, answers, 3, 2)
-				+ CheckAnswer(20, answers, 4, 1)
+				+ CheckAnswer(20, answers, 4, 2)
 				+ CheckAnswer(20, answers, 5, 2);
 
 			return await _taskProgressService.SetTaskProgressAsync(request.UserId, Unit4, Unit4.Tasks[2], request.IsRetry, request.Duration, progress);
@@ -37,9 +37,9 @@ namespace Service.TutorialSecurity.Services
 		{
 			ITaskTrueFalseAnswer[] answers = request.Answers;
 
-			int progress = CheckAnswer(20, answers, 1, false)
-				+ CheckAnswer(20, answers, 2, false)
-				+ CheckAnswer(20, answers, 3, true)
+			int progress = CheckAnswer(20, answers, 1, true)
+				+ CheckAnswer(20, answers, 2, true)
+				+ CheckAnswer(20, answers, 3, false)
 				+ CheckAnswer(20, answers, 4, true)
 				+ CheckAnswer(20, answers, 5, true);
 
